@@ -1,0 +1,124 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+min-height: 100vh;
+align-items: center;
+justify-content: center;
+display: flex;
+font-family: "poppins", sans-serif;
+perspective: 1000px;
+}
+
+.container{
+width: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.card{
+min-height: 80vh;
+width: 25rem;
+box-shadow: -6px 4px 20px 8px rgba(0,0,0,0.5);
+-webkit-box-shadow: -6px 4px 20px 8px rgba(0,0,0,0.5);
+-moz-box-shadow: -6px 4px 20px 8px rgba(0,0,0,0.5);
+border-radius: 30px;
+padding: 0rem 3rem;
+transform-style:preserve-3d ;
+}
+
+.product{
+min-height: 35vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.product img{
+    width: 20rem;
+    transform-style:preserve-3d ;
+}
+
+.circle{
+width: 15rem;
+height: 15rem;
+
+background: rgb(102,191,149);
+background: linear-gradient(49deg, rgba(102,191,149,1) 15%, rgba(175,189,99,1) 45%, rgba(253,187,45,1) 98%);
+
+position: absolute;
+border-radius: 50%;
+z-index: -1;
+}
+
+
+.info h1{
+font-size: 1.5rem;
+text-align: center;
+margin: 9px;
+transition: 0.7s ease-in-out;
+}
+
+.info h3{
+font-size: 1rem;
+text-align: center;
+
+}
+
+.size{
+display: flex;
+justify-content: space-between;
+padding-top: 1rem;
+}
+
+.size button{
+padding: 0.5rem 2rem;
+background: none;
+border: none;
+box-shadow: opx 5px 10px rgba(0,0,0,0.2);
+border-radius: 30px;
+cursor: pointer;
+font-weight: bold;
+color: gray;
+
+box-shadow: 11px 1px 17px 0px rgba(0,0,0,0.5);
+-webkit-box-shadow: 11px 1px 17px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 11px 1px 17px 0px rgba(0,0,0,0.5);
+}
+button.active{
+    background: gray;
+    color: white;
+}
+
+.purchase button{
+background-color: rgb(244, 91, 91);
+padding: 0.5rem  6rem;
+align-items: center;
+justify-content: center;
+text-align: center;
+margin-left: 1rem;
+margin: 1rem;
+border-radius: 20px;
+color: white;
+cursor: pointer;
+border: none;
+font-size: 16px;
+font-weight: 600;
+
+
+box-shadow: 11px 17px 17px 0px rgba(0,0,0,0.37);
+-webkit-box-shadow: 11px 17px 17px 0px rgba(0,0,0,0.37);
+-moz-box-shadow: 11px 17px 17px 0px rgba(0,0,0,0.37);
+
+}
+
+.purchase button:active{
+    background: transparent;
+    color: red;
+}
+
+
